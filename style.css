@@ -1,0 +1,141 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Open Sans', sans-serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.title{
+position:absolute;
+z-index:50;
+font-family:'Gruppo', cursive;
+font-size:5rem;
+letter-spacing:.5rem;
+text-shadow:0 0 20px rgba(0,0,0,0.8);
+text-align:center;
+padding:20px;
+color:#fffae3;
+opacity:0;
+transform:translateY(50px);
+transition: all 1s ease-out;
+}
+
+.layer{
+position:absolute;
+width:100%;
+height:120%;
+background-size:cover;
+background-position:center;
+}
+
+.layer-1{
+background-image:url("https://thumbs.dreamstime.com/b/artistic-hungary-map-flag-design-combines-country-s-silhouette-red-white-green-national-creating-creative-409900359.jpg");
+z-index:1;
+}
+
+.layer-2{
+background-image:url("https://thumbs.dreamstime.com/b/artistic-hungary-map-flag-design-combines-country-s-silhouette-red-white-green-national-creating-creative-409900359.jpg");
+z-index:2;
+opacity:.3;
+}
+
+.layer-3{
+background-image:url("https://thumbs.dreamstime.com/b/artistic-hungary-map-flag-design-combines-country-s-silhouette-red-white-green-national-creating-creative-409900359.jpg");
+z-index:3;
+opacity:.15;
+}
+
+.location{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+text-align:center;
+padding:40px;
+transition: background 0.5s ease-in-out;
+}
+
+.info{
+background:rgba(0,0,0,.45);
+padding:40px;
+max-width:750px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.7);
+opacity:0;
+transform:translateY(50px);
+transition: all 1s ease-out;
+}
+
+h2{
+font-family:'Gruppo', cursive;
+font-size:3.5rem;
+margin-bottom:25px;
+text-shadow:2px 2px 12px rgba(0,0,0,0.8);
+color:#fffae3;
+}
+
+p{
+font-family:'Open Sans', sans-serif;
+font-size:1.3rem;
+line-height:1.8;
+color:#f0f0f0;
+text-shadow:1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.budapest{
+background-image:url("https://www.eurail.com/content/dam/images/budapest-hungary-castle-hill-panorama.adaptive.767.1659433958273.jpg");
+}
+
+.balaton{
+background-image:url("https://74nullanulla.hu/files/99/88/9988e0dfcbd84fa3b9ae60d73d834666.jpg");
+}
+
+.eger{
+background-image:url("https://zcms.hu/hotelvillavolgy3hu/img/gallery/98269a7ac0059538bba265d36c06d7f6.jpg");
+}
+
+.hortobagy{
+background-image:url("https://visithortobagy.synergyfox.app/public/1/latnivalok/kilenclyuku_hid/hid.webp");
+}
+
+.pecs{
+background-image:url("https://pecs.hu/app/uploads/2024/08/Pecsi_Vagyok_KaszasImrePhoto.png");
+}
+
+.animate.visible{
+opacity:1 !important;
+transform:translateY(0) !important;
+}
+
+@media only screen and (max-width:900px){
+.title{
+font-size:3rem;
+}
+h2{
+font-size:2.5rem;
+}
+p{
+font-size:1rem;
+}
+.info{
+padding:25px;
+}
+}
